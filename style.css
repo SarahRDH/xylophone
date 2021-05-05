@@ -1,0 +1,103 @@
+.base {
+    background-color: brown;
+    border-radius: 10px;
+    width: 90vw;
+    height: 80vh;
+    padding: 20px;
+}
+
+.keys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    
+}
+
+.key1, .key2, .key3, .key4, .key5, .key6, .key7, .key8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    margin: 0px 20px;
+    border-radius: 10px;
+}
+
+.key1 {
+    background-color: red; 
+    height: 90%;
+    margin-left: 50px;
+}
+
+.key2 {
+    background-color: blue;
+    height: 80%;
+}
+
+.key3 {
+    background-color: pink;
+    height: 70%;
+}
+
+.key4 {
+    background-color: purple;
+    height: 60%;
+}
+
+.key5 {
+    background-color: seagreen;
+    height: 50%;
+}
+
+.key6 {
+    background-color: skyblue;
+    height: 40%;
+}
+
+.key7 {
+    background-color: thistle;
+    height: 33%;
+}
+
+.key8 {
+    background-color: yellow;
+    height: 27%;
+}
+
+p:first-child {
+    padding: 5px;
+    border: 1px solid black;
+    align-self: flex-start;
+    background-color: silver;
+    border-radius: 100%;
+    margin-left: 6px;
+}
+
+p:last-child {
+    padding: 5px;
+    border: 1px solid black;
+    align-self: flex-end;
+    background-color: silver;
+    border-radius: 100%;
+    margin-right: 7px;
+}
+
+.key7 p:last-child {
+    margin-top: 2px;
+}
+
+.key7 p:first-child {
+    margin-bottom: 18px;
+    margin-top: 12px;
+}
+
+.key8 p:last-child {
+    margin-top: 0px;
+}
+
+.key8 p:first-child {
+    margin-bottom: 14px;
+    margin-top: 10px;
+}
