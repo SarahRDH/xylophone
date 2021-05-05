@@ -1,9 +1,29 @@
+html {
+    background-image: url("https://www.dropbox.com/s/2rjxksj6sy3m8an/IMG_9214.jpeg?raw=1");
+    background-size: cover;
+    background-position: center;
+}
+
 .base {
-    background-color: brown;
-    border-radius: 10px;
-    width: 90vw;
-    height: 80vh;
+    background-image: linear-gradient(rgba(178, 122, 87, 0.8), rgba(94, 49, 29, 0.8));
+    border-radius: 20px;
+    /* border-style: outset; */
+    border-top: 0px;
+    border-right: 12px outset rgba(119, 61, 36, 0.5);
+    border-bottom: 15px outset rgba(85, 42, 24, 0.5);
+    border-left: 2px outset rgba(82, 42, 26, 0.5);
+    width: 80vw;
+    min-width: 650px;
+    height: 75vh;
     padding: 20px;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+}
+
+kbd {
+    font-size: 24px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
 }
 
 .keys {
@@ -11,19 +31,22 @@
     align-items: center;
     justify-content: center;
     width: 90%;
-    height: 90%;  
+    height: 90%;
+    margin-left: 35px;  
 }
 
 .key {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 20%;
+    min-width: 40px;
     margin: 0px 20px;
+    border: 1px solid gray;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-    transition: all 0.5s;
+    transition: all 0.5s ease;
 }
 
 .key1 {
@@ -74,6 +97,7 @@ p:nth-child(2) {
     background-color: silver;
     border-radius: 100%;
     margin: 8% 40% 0%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     
 }
 
@@ -84,22 +108,40 @@ p:last-child {
     background-color: silver;
     border-radius: 100%;
     margin: 20% 45% 8%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     
 }
 
 .playing {
-    transform: scale(1.2,1.2); 
+    transform: scale(1.2, 1.2); 
     border: 2px solid yellow;
     animation: shake 0.2s ease-in-out alternate;
 }
   @keyframes shake {
     0% { transform: rotate(0deg);}
-    30% { transform: rotate(5deg);}
+    30% { transform: rotate(3deg);}
     60% { transform: rotate(0deg);}
-    100% { transform: rotate(-5deg);}
+    100% { transform: rotate(-3deg);}
   }
     
 
+h1 {
+    font-family: "Veranda", sans-serif;
+    font-size: 30px;
+    padding: 3% 20% 3% 15%;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
 
-
+footer {
+    font-size: 15px;
+    font-family: "Kalam", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 20% 3% 15%;
+    color: white;
+    letter-spacing: 2px;
+}
   
